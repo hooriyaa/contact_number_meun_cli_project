@@ -67,11 +67,11 @@ function viewContact() {
       console.log(
         `\n${user.ID}, Person Name:${chalk.bold.blueBright(
           user.Name
-        )} ---- Contact Number: ${chalk.greenBright(user.phoneNumber)}`,
+        )} ---- Contact Number: ${chalk.greenBright(user.phoneNumber)}\n`,
         ),
     );
-  else {
+  else 
     console.log(chalk.red("\nNo contact available...\n"));
     contactMenuInput()
-  }
+  
 }
