@@ -46,7 +46,7 @@ async function addContact() {
 }
 function viewContact() {
     if (contacts.length > 0)
-        contacts.forEach((user) => console.log(`\n${user.ID}, Person Name:${chalk.bold.blueBright(user.Name)} ---- Contact Number: ${chalk.greenBright(user.phoneNumber)}`, contactMenuInput()));
+        contacts.forEach((user) => console.log(`\n${user.ID}, Person Name:${chalk.bold.blueBright(user.Name)} ---- Contact Number: ${chalk.greenBright(user.phoneNumber)}`));
     else {
         console.log(chalk.red("\nNo contact available...\n"));
         contactMenuInput();
